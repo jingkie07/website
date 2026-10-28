@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EliteCars - Car Rental Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Picture used in the slider. Replace with real photos later (see style.css notes). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="scene" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3b4a"/><stop offset="1" stop-color="#8a96a0"/></linearGradient>
+      <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a6e55"/><stop offset="1" stop-color="#3b2d24"/></linearGradient>
+    </defs>
+    <rect width="1200" height="600" fill="url(#sky)"/>
+    <polygon points="0,380 150,260 300,340 460,230 640,350 700,380 0,420" fill="#4b5a66"/>
+    <polygon points="820,0 1200,0 1200,500 760,500 800,300" fill="url(#rock)"/>
+    <rect y="430" width="1200" height="170" fill="#2a2a2d"/>
+    <rect y="430" width="1200" height="6" fill="#55555a"/>
+    <!-- white SUV -->
+    <path d="M250 440 L262 340 Q270 300 320 285 L470 255 Q560 240 650 262 L760 292 Q830 310 840 350 L850 440Z" fill="#f2f3f5"/>
+    <path d="M330 300 L470 272 Q560 262 640 280 L700 296 L690 335 L330 340Z" fill="#14181c"/>
+    <rect x="300" y="395" width="540" height="30" rx="6" fill="#1c1f23"/>
+    <circle cx="350" cy="440" r="50" fill="#0c0c0d"/><circle cx="350" cy="440" r="22" fill="#6c7076"/>
+    <circle cx="745" cy="440" r="50" fill="#0c0c0d"/><circle cx="745" cy="440" r="22" fill="#6c7076"/>
+  </symbol>
+</svg>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="contact">
+      <a href="tel:+1112223333"><span class="red">&#9742;</span> +111-222-333</a>
+      <a href="mailto:abc@gmail.com"><span class="red">&#9993;</span> abc@gmail.com</a>
+    </div>
+    <div class="social">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Twitter">t</a>
+      <a href="#" aria-label="Instagram">in</a>
+      <a href="#" aria-label="LinkedIn">li</a>
+    </div>
+  </div>
+</div>
+
+<!-- Menu -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 40 40" width="40" height="40"><path d="M20 2 38 20 20 38 2 20Z" fill="none" stroke="#e01b24" stroke-width="3"/><path d="M20 10 30 20 20 30 10 20Z" fill="#e01b24"/></svg>
+      <span><b><i>Elite</i>Cars</b><small>Car Rental Service</small></span>
+    </a>
+    <button class="burger" aria-label="Open menu">&#9776;</button>
+    <ul class="menu">
+      <li><a href="index.html" class="here">Home</a></li>
+      <li class="has-sub"><a href="about.html">About &#9013;</a><ul><li><a href="our-story.html">Our Story</a></li><li><a href="our-team.html">Our Team</a></li></ul></li>
+      <li class="has-sub"><a href="faq.html">Pages &#9013;</a><ul><li><a href="faq.html">FAQ</a></li><li><a href="pricing.html">Pricing</a></li></ul></li>
+      <li class="has-sub"><a href="cars.html">Cars &#9013;</a><ul><li><a href="suv.html">SUV</a></li><li><a href="sedan.html">Sedan</a></li><li><a href="sports.html">Sports</a></li></ul></li>
+      <li class="has-sub"><a href="blog.html">Blog &#9013;</a><ul><li><a href="latest-news.html">Latest News</a></li><li><a href="travel-tips.html">Travel Tips</a></li></ul></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="rent.html" class="rent">Rent Car</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Slider -->
+<header class="slider">
+  <div class="slide on s1"><svg><use href="#scene"/></svg>
+  <img src="images/slide1.jpg" alt="" onerror="this.remove()">
+    <div class="caption">
+      <h1>Best Cars For The Best Journey</h1>
+      <p>We Provide Best Cars With The Best Prices. We Are Expert In Car Rental. Enjoy Your Holidays With Us. We Make Your Drive Memorable. We Care For Your Safety.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </div>
+  <div class="slide s2"><svg><use href="#scene"/></svg>
+  <img src="images/slide2.jpg" alt="" onerror="this.remove()">
+    <div class="caption">
+      <h1>Drive Any Road With Comfort</h1>
+      <p>Pick from SUVs, sedans, and sports cars. Every car is clean, checked, and ready to go when you are.</p>
+      <a href="cars.html" class="btn">View Cars</a>
+    </div>
+  </div>
+  <div class="slide s3"><svg><use href="#scene"/></svg>
+  <img src="images/slide3.jpg" alt="" onerror="this.remove()">
+    <div class="caption">
+      <h1>Low Prices. No Hidden Fees.</h1>
+      <p>Pay the price you see. Book online in two minutes and pick up your car the same day.</p>
+      <a href="rent.html" class="btn">Book Now</a>
+    </div>
+  </div>
+
+  <button class="arrow prev" aria-label="Previous slide">&#10094;</button>
+  <button class="arrow next" aria-label="Next slide">&#10095;</button>
+  <div class="dots"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+</header>
+
+<!-- Search -->
+<section class="search">
+  <div class="wrap">
+    <h2>Search Cars</h2>
+    <form action="cars.html">
+      <select><option value="">Car Make</option><option>Toyota</option><option>Lamborghini</option><option>BMW</option></select>
+      <select><option>Car Type</option><option>SUV</option><option>Sedan</option><option>Sports</option></select>
+      <select><option>All Models</option><option>2024</option><option>2025</option></select>
+      <button class="btn wide">Search</button>
+    </form>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap">
+  <span>&copy; 2026 EliteCars. All rights reserved.</span>
+  <span><a href="index.html">Home</a> &middot; <a href="cars.html">Cars</a> &middot; <a href="contact.html">Contact</a></span>
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
